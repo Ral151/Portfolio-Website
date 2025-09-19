@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/55037c8e92.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="static\images/design.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    {% extends "base.html" %} {% block content %}
+    <main
+      class="hero w-full h-[86rem] bg-contain"
+      style="background-image: url('{{hero_image}}');"
+    >
+      <!-- Desktop -->
+      <section class="introContainer md:inline hidden">
+        <div class="w-full h-lvh flex justify-around items-center">
+          <span class="profilePict rounded-full bg-black w-80 h-80">
+            <img src="" alt="" />
+          </span>
+          <aside class="aboutCon w-[36rem] pt-12 h-[27rem]">
+            <h1 class="title2">Hello, I'm</h1>
+            <h2 class="title1">Gerald Benedict Setiawan</h2>
+            <p class="title2">I'm learning to be a Full Stack Developer.</p>
+            <div class="textCon w-ful h-fit mt-6">
+              <p class="text-black text-justify break-all">
+                Currently an undergraduate student at The University of Hong
+                Kong majoring in Computer Science.
+              </p>
+            </div>
+            <div
+              class="iconCon w-fit h-fit flex justify-around items-center mt-12"
+            >
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/gerald-benedict-5a32042b7/"
+                ><i
+                  class="mt-3 mr-3 mb-3 fa-3x fa-brands fa-square-linkedin"
+                ></i
+              ></a>
+              <a target="_blank" href="https://www.instagram.com/benedictg._/"
+                ><i class="mt-3 mr-3 mb-3 fa-3x fa-brands fa-instagram"></i
+              ></a>
+              <a target="_blank" href="https://github.com/Ral151"
+                ><i class="mt-3 mr-3 mb-3 fa-3x fa-brands fa-square-github"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRnXdxzcPQTSTttGcBcFjpnMdlqRLSGDnPxMKNgHsMCsgsScWpjCBDTBbqCwTSwVCCflcvG"
+                ><i class="mt-3 mb-3 fa-3x fa-regular fa-envelope"></i
+              ></a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="projectCon md:inline hidden">
+        <div class="w-full h-lvh realCon">
+          <div
+            class="title3Con w-full h-[6rem] flex justify-center items-center"
+          >
+            <h1 class="title3">My Projects</h1>
+          </div>
+          <div
+            class="ConProj w-full h-[36rem] flex justify-around items-center"
+          >
+            <div
+              class="w-[22rem] rounded-3xl h-[32rem] border-black border-2 flex flex-col justify-center items-center"
+            >
+              <a target="_blank" href="https://smakcalvin14.vercel.app"
+                ><img
+                  src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1750585821/logo_mmbvps.png"
+                  alt="School Logo"
+                  class="w-[10rem] h-[6rem] mt-6"
+                />
+              </a>
+              <div
+                class="containerInfo w-full flex justify-center items-center flex-col h-fit rounded-3xl m-6"
+              >
+                <h1 class="font-bold font-serif text-2xl">Yearbook Project</h1>
+                <div
+                  class="h-[15rem] w-full flex flex-col justify-center items-center"
+                >
+                  <p class="m-4 text-justify break-words font-serif">
+                    A website designed for batch 14 Calvin Senior High School
+                    Students (SMA Kristen Calvin, Jakarta) to showcase memories,
+                    students' and teacher's profile, and a digital yearbook.
+                  </p>
+                  <div class="w-full h-full flex justify-center items-center">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Ral151/Yearbook-SKC"
+                      ><i class="fa-4x fa-brands fa-square-github"></i
+                    ></a>
+                    <a target="_blank" href="https://smakcalvin14.vercel.app">
+                      <i class="fa-3x fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[22rem] rounded-3xl h-[32rem] border-black border-2 flex flex-col justify-center items-center"
+            >
+              <a target="_blank" href="https://smakcalvin14.vercel.app"
+                ><img
+                  src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1750585821/logo_mmbvps.png"
+                  alt="School Logo"
+                  class="w-[10rem] h-[6rem] mt-6"
+                />
+              </a>
+              <div
+                class="containerInfo w-full flex justify-center items-center flex-col h-fit rounded-3xl m-6"
+              >
+                <h1 class="font-bold font-serif text-2xl">Yearbook Project</h1>
+                <div
+                  class="h-[15rem] w-full flex flex-col justify-center items-center"
+                >
+                  <p class="m-4 text-justify break-words font-serif">
+                    A website designed for batch 14 Calvin Senior High School
+                    Students (SMA Kristen Calvin, Jakarta) to showcase memories,
+                    students' and teacher's profile, and a digital yearbook.
+                  </p>
+                  <div class="w-full h-full flex justify-center items-center">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Ral151/Yearbook-SKC"
+                      ><i class="fa-4x fa-brands fa-square-github"></i
+                    ></a>
+                    <a target="_blank" href="https://smakcalvin14.vercel.app">
+                      <i class="fa-3x fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[22rem] rounded-3xl h-[32rem] border-black border-2 flex flex-col justify-center items-center"
+            >
+              <a target="_blank" href="https://smakcalvin14.vercel.app"
+                ><img
+                  src="https://res.cloudinary.com/dfxf0wmnt/image/upload/v1750585821/logo_mmbvps.png"
+                  alt="School Logo"
+                  class="w-[10rem] h-[6rem] mt-6"
+                />
+              </a>
+              <div
+                class="containerInfo w-full flex justify-center items-center flex-col h-fit rounded-3xl m-6"
+              >
+                <h1 class="font-bold font-serif text-2xl">Yearbook Project</h1>
+                <div
+                  class="h-[15rem] w-full flex flex-col justify-center items-center"
+                >
+                  <p class="m-4 text-justify break-words font-serif">
+                    A website designed for batch 14 Calvin Senior High School
+                    Students (SMA Kristen Calvin, Jakarta) to showcase memories,
+                    students' and teacher's profile, and a digital yearbook.
+                  </p>
+                  <div class="w-full h-full flex justify-center items-center">
+                    <a
+                      target="_blank"
+                      href="https://github.com/Ral151/Yearbook-SKC"
+                      ><i class="fa-4x fa-brands fa-square-github"></i
+                    ></a>
+                    <a target="_blank" href="https://smakcalvin14.vercel.app">
+                      <i class="fa-3x fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Desktop -->
+    </main>
+    {% endblock %}
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-black w-full h-full">
+    <nav class="bg-white w-full h-20 border-b-4 border-gray-100 ">
+      <!-- Desktop Nav -->
+      <section class="desktop md:inline hidden">
+          <div class="container w-full h-full flex justify-around items-center">
+              <div class="name text-black font-semibold">My Portfolio</div>
+              <div class="sectionContainer w-[27rem] h-12 -mr-12 flex justify-around items-center">
+                  <div class="Home text-black font-semibold">Home</div>
+                  <div class="AboutMe text-black font-semibold">About Me</div>
+                  <div class="Projects text-black font-semibold">Projects</div>
+                  <div class="Contact text-black font-semibold">Contact</div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Mobile Nav -->
+      <section class="mobile md:hidden inline">
+          <div class="container w-full h-full flex justify-between items-center px-4">
+              <div class="name text-black font-semibold">My Portfolio</div>
+              <button id="mobile-menu-button" class="p-2 focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+          </div>
+      </section>
+    </nav>
+</body>
+</html>

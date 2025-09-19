@@ -1,0 +1,19 @@
+.title1 {
+font-family: "lato", sans-serif;
+font-weight: 550;
+font-style: normal;
+font-size: 2.5rem;
+}
+
+.title2{
+    font-family: "lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+            
+.title3{
+    font-family: "mea culpa", cursive;
+    font-size: 3rem;
+    font-weight: 500;
+}
